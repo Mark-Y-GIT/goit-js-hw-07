@@ -1,25 +1,19 @@
-const categoriesRef = document.querySelectorAll(".item");
-
+const categoriesRef = document.querySelectorAll('.item');
 
 const categoryList = function () {
-    
-    console.log(`В списке ${categoriesRef.length} категории.`);
+  console.log(`В списке ${categoriesRef.length} категории.`);
 };
 
-
-
 const categoryAndQuantity = () => {
-    
-categoriesRef.forEach(element => {
-    
-    console.log(`Категория: ${element.querySelector("h2").textContent}`);
+  categoriesRef.forEach(element => {
+    console.log(`Категория: ${element.querySelector('h2').textContent}`);
 
-    console.log(`Количество элементов: ${ element.querySelector("ul").children.length}`);
-    
-});
+    console.log(
+      `Количество элементов: ${element.querySelector('ul').children.length}`,
+    );
+  });
+};
 
-}
+categoryList();
 
-categoryList()
-
-categoryAndQuantity()
+categoryAndQuantity();
